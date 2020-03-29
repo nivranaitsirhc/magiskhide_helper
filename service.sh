@@ -1,2 +1,1 @@
-magiskhide --status | grep 'not' ||\
-(magiskhide --disable;sleep 5;magiskhide --enable;)
+magiskhide --status | grep 'not' || (sleep 10;magiskhide --disable;sleep 5;magiskhide --enable;)
